@@ -1,0 +1,137 @@
+.mainn{
+  cursor: pointer;
+}
+.head{
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.slog{
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(253, 239, 201);
+}
+.main{
+    background-image: url(/images/cover.avif);
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width: 768px){
+  .main{
+    background-size: cover;
+  }
+}
+.sel{
+    text-decoration: none;
+}
+.list{
+    background-color: rgb(253, 239, 201);
+}
+.cc{
+    transition: 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cc:hover{
+    transform: scale(1.1);
+}
+.wait{
+    background-color: rgb(248, 241, 222);
+}
+.opacity-75{
+    opacity: .75;
+}
+.opacity-75:hover{
+  opacity: 1;
+}
+.fea{
+    width: 100%;
+    background: url(/images/blend.avif);
+    background-position: center;
+   background-size: cover;
+    position: relative;
+    background-color: rgb(248, 241, 222);
+   background-blend-mode: multiply;
+}
+.mainc{
+  width: 100%;
+  background: url(/images/blend.avif);
+  background-position: center;
+ background-size: cover;
+ height: 100dvh;
+  background-color: rgb(248, 241, 222);
+ background-blend-mode: multiply;
+}
+.test{
+    animation: fadeIn 8s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+   /* Animation for coming from the right */
+   .from-right {
+    animation: slideFromRight 3s ease-out;
+  }
+
+  /* Animation for coming from the left */
+  .from-left {
+    animation: slideFromLeft 3s ease-out;
+  }
+  .from-leftt {
+    animation: slideFromLeftt 2s ease-out;
+  }
+   /* Animation for coming from the top */
+   .from-bottom {
+    animation: slideFromBottom 3s ease-out;
+  }
+
+  /* Keyframe for the right slide animation */
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%); /* Starts from the right */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* Ends at original position */
+      opacity: 1;
+    }
+  }
+
+  /* Keyframe for the left slide animation */
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%); /* Starts from the left */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* Ends at original position */
+      opacity: 1;
+    }
+  }
+  @keyframes slideFromLeftt {
+    0% {
+      transform: translateX(-100%); /* Starts from the left */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* Ends at original position */
+      opacity: 1;
+    }
+  }
+  @keyframes slideFromBottom {
+    0% {
+      transform: translateY(100%); /* Starts from the bottom */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* Ends at original position */
+      opacity: 1;
+    }
+  }
